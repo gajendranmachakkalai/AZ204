@@ -1,0 +1,7 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/AZ204/StorageQueue/bin/Debug/net6.0
+/AZ204/StorageQueue/obj
+/AZ204/.vs
