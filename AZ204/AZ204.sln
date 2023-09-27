@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32616.157
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StorageQueue", "StorageQueue\StorageQueue.csproj", "{EEB23130-4A07-4707-B311-47F067F6F809}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StorageQueue", "StorageQueue\StorageQueue.csproj", "{EEB23130-4A07-4707-B311-47F067F6F809}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureStorageQueueTrigger", "AzureStorageQueueTrigger\AzureStorageQueueTrigger.csproj", "{2140ADA9-734B-4B76-BDBB-3C8C4C37A483}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzureStorageQueueTrigger", "AzureStorageQueueTrigger\AzureStorageQueueTrigger.csproj", "{2140ADA9-734B-4B76-BDBB-3C8C4C37A483}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureEventHub", "AzureEventHub\AzureEventHub.csproj", "{1A8742D0-5488-410D-BB44-E08E4C075071}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{2140ADA9-734B-4B76-BDBB-3C8C4C37A483}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2140ADA9-734B-4B76-BDBB-3C8C4C37A483}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2140ADA9-734B-4B76-BDBB-3C8C4C37A483}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A8742D0-5488-410D-BB44-E08E4C075071}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A8742D0-5488-410D-BB44-E08E4C075071}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A8742D0-5488-410D-BB44-E08E4C075071}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A8742D0-5488-410D-BB44-E08E4C075071}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

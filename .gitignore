@@ -5,3 +5,6 @@
 /AZ204/StorageQueue/bin/Debug/net6.0
 /AZ204/StorageQueue/obj
 /AZ204/.vs
+/AZ204/AzureEventHub/bin/Debug/net6.0
+/AZ204/AzureEventHub/obj
+/.vs/AZ204/v17
