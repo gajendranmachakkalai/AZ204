@@ -58,8 +58,7 @@ namespace AzureEventHub
         /// </summary>
         /// <returns></returns>
         public async Task ReadEventFromPartition()
-        {
-            
+        {   
             EventHubConsumerClient eventHubConsumerClient = new EventHubConsumerClient(consumerGroup, connectionString);
             string partitionId = (await eventHubConsumerClient.GetPartitionIdsAsync()).First();
             var cancellation = new CancellationTokenSource();

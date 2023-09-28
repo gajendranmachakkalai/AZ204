@@ -33,5 +33,21 @@ namespace AzureEventHub
             Console.WriteLine("Events are sent");
             await eventHubProducerClient.DisposeAsync();
         }
+
+        /// <summary>
+        /// SendEvent Data with Partitionkey
+        /// </summary>
+        /// <param name="devices"></param>
+        public async void SendDataPartition(List<Device> devices)
+        {
+            EventHubProducerClient eventHubProducerClient = new EventHubProducerClient(connectionString, eventHubName);
+            List<EventData> dataList = new List<EventData>();
+            foreach(Device device in devices)
+            {
+                EventData eventData = new EventData(Encoding.UTF8.GetBytes(JsonConvert.SerializeObject(device)));
+                dataList.Add(eventData);
+            }
+            await eventHubProducerClient.SendAsync(dataList, new SendEventOptions() { PartitionKey = "D1" });
+        }
     }
 }
