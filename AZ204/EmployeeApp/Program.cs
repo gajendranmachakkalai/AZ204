@@ -1,8 +1,10 @@
+using EmployeeApp.Models;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-
+builder.Services.Configure<MyAppSettings>(builder.Configuration.GetSection("MyAppSettings"));
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
