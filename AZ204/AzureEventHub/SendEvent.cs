@@ -12,7 +12,8 @@ namespace AzureEventHub
     public class SendEvent
     {
         private readonly string connectionString = "";
-        private readonly string eventHubName = "apphub";
+        private readonly string eventHubName = "";
+
 
         /*
          Install Azure.Messaging.EventHub Nugetpackage
@@ -38,7 +39,7 @@ namespace AzureEventHub
         /// SendEvent Data with Partitionkey
         /// </summary>
         /// <param name="devices"></param>
-        public async void SendDataPartition(List<Device> devices)
+        public async Task SendDataPartition(List<Device> devices)
         {
             EventHubProducerClient eventHubProducerClient = new EventHubProducerClient(connectionString, eventHubName);
             List<EventData> dataList = new List<EventData>();

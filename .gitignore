@@ -9,3 +9,7 @@
 /AZ204/AzureEventHub/obj
 /.vs/AZ204/v17
 /.vs
+/AZ204/WebAPI/bin
+/AZ204/WebAPI/obj
+/AZ204/EmployeeApp/bin
+/AZ204/EmployeeApp/obj

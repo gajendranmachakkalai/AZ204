@@ -13,7 +13,7 @@ namespace AzureEventHub
          */
 
         private readonly string connectionString = "";
-        private readonly string consumerGroup = "$Default";
+        private readonly string consumerGroup = "";
 
         public ReadEvents(string connectionString, string consumerGroup)
         {
